@@ -16,7 +16,10 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
+import at.fhooe.sail.mc.jpc.ui.composables.InteractionTest
 import at.fhooe.sail.mc.jpc.ui.theme.JpCTutorialTheme
+
+const val TAG: String = "JetpackComposeIntroduction"
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,9 +28,7 @@ class MainActivity : ComponentActivity() {
 // set content ist einziger bereich wo ein composable implementiert werden kann
         setContent {
             JpCTutorialTheme {
-                    Greeting(
-                        name = "again"
-                    )
+                InteractionTest()
             }
         }
     }
